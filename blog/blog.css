@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark: #473144;
+    --body-font: Helvetica, Arial, sans-serif;
+    --headline-font: Lora, Impact, serif
+}
+.skiptocontent a {
+	position:absolute;
+	top:-40px;
+    background-color: var(--gold);
+    color:var(red);
+}
+.skiptocontent a:focus {
+	top:0;
+}
+
+nav{
+    
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+    width: calc(100%-20px);
+    padding:20px;
+    height: 20px;
+    align-content: center;
+    margin-bottom:10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    text-align: right;
+}
+a:hover{
+    color:var(--dark);
+}
+a{
+    text-decoration: none;
+    color:var(--red);
+    font-family: var(--body-font);
+    font-size: larger;
+   
+}
+h1, h2{
+    font-family: var(--headline-font);
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+#page-title{
+    color:var(--dark);
+    align-self: center;
+    height: 80px;
+    align-content: center;
+}
+p, time{
+    font-family: var(--body-font);
+}
+
+main{
+    display: grid;
+    justify-content: end;
+    justify-items: end;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:30px;
+}
+
+aside{
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+article{
+    display: grid;
+    grid-auto-rows: auto;
+    justify-content: end;
+    justify-items: end;
+}
+.title{
+    color:var(--red);
+}
+
+.placeholder{
+    height:100%;
+}
+
