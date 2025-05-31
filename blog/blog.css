@@ -64,22 +64,54 @@ p, time{
 
 main{
     display: grid;
-    justify-content: end;
-    justify-items: end;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap:30px;
+    padding: 20px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+
+aside, article{
+    display:contents;
+}
+
+.meta {
+    text-align: right;
+    padding-right: 15px;
+    
+}
+
+.review {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-left: 1px solid var(--gold);
+    padding-left: 15px;
+}
 aside{
     display: grid;
     grid-auto-rows: auto;
+    padding-right: 10px;
 }
 
 article{
     display: grid;
     grid-auto-rows: auto;
-    justify-content: end;
-    justify-items: end;
+    justify-content: center;
+    justify-items: center;
 }
 .title{
     color:var(--red);
@@ -89,3 +121,8 @@ article{
     height:100%;
 }
 
+.date{
+    font-size: larger;
+    padding-left: 20px;
+    align-self: stretch;
+}
