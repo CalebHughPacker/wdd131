@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Shop — your shopping cart">
+  <title>Packer's Emporium | Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Shop Logo" width="80" height="80">
+    <h1>Packers Emporium</h1>
+    <h2>Your Cart</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
+
+  <main>
+    <h2>Your Cart</h2>
+    <section id="cart-items" aria-live="polite"></section>
+    <div id="cart-summary"></div>
+  </main>
+
+  <script type="module" src="script.js" defer></script>
+</body>
+</html>
